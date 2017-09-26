@@ -1,0 +1,3 @@
+1. Typo in path: <WORKING DIR>/samples/OSX -> <WORKING DIR>/sample/OSX
+2. No executable in sample/Linux64
+3. Case sensivity: voxelizer data/sphere/Sphere.obj -> sphere.obj
