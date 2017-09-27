@@ -118,7 +118,7 @@ void saveVoxelsToObj(const char * outfile)
 
 int main(int argc, char **argv)
 {
-    unsigned int dim = 64; //dimension of voxel grid (e.g. 32x32x32)
+    unsigned int dim = 128; //dimension of voxel grid (e.g. 32x32x32)
     //Load OBJ
     if(argc < 3)
     {
@@ -132,7 +132,7 @@ int main(int argc, char **argv)
     /********* ASSIGNMENT *********/
     /* Iterate over all voxels in g_voxelGrid and test whether they are inside our outside of the
      * surface defined by the triangles in g_triangleList */
-    unsigned int num_samples = 50;
+    unsigned int num_samples = 3;
     double cutoff = 0.5; // Fraction of rays that need to be inside the object in order to fill the voxel
 
 
