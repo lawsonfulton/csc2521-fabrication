@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.26)  26 SEP 2017 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.27)  27 SEP 2017 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"report - Lawson Fulton.tex"
 (./report - Lawson Fulton.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -357,16 +357,16 @@ File: ../data/renders/dragon128.png Graphic file (type png)
 Package pdftex.def Info: ../data/renders/dragon128.png used on input line 102.
 (pdftex.def)             Requested size: 281.85587pt x 234.1662pt.
 
-<../data/renders/bowl.png, id=20, 652.4375pt x 542.025pt>
-File: ../data/renders/bowl.png Graphic file (type png)
+<../data/renders/tubes.png, id=20, 652.4375pt x 542.025pt>
+File: ../data/renders/tubes.png Graphic file (type png)
 
-<use ../data/renders/bowl.png>
-Package pdftex.def Info: ../data/renders/bowl.png used on input line 110.
+<use ../data/renders/tubes.png>
+Package pdftex.def Info: ../data/renders/tubes.png used on input line 110.
 (pdftex.def)             Requested size: 281.85587pt x 234.1662pt.
  [2 <../data/renders/sphere32.png> <../data/renders/bunny32.png> <../data/rende
 rs/teapot32.png> <../data/renders/sphere64.png> <../data/renders/bunny64.png> <
 ../data/renders/teapot64.png>] [3 <../data/renders/dragon128.png> <../data/rend
-ers/bowl.png>]
+ers/tubes.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
@@ -399,12 +399,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
  ) 
 Here is how much of TeX's memory you used:
- 5223 strings out of 494910
- 78554 string characters out of 6179836
- 159028 words of memory out of 5000000
- 8481 multiletter control sequences out of 15000+600000
+ 5223 strings out of 493029
+ 78559 string characters out of 6136234
+ 163717 words of memory out of 5000000
+ 8725 multiletter control sequences out of 15000+600000
  5460 words of font info for 20 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  29i,5n,23p,290b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
@@ -412,7 +412,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on "report - Lawson Fulton.pdf" (4 pages, 3540553 bytes).
+Output written on "report - Lawson Fulton.pdf" (4 pages, 3529058 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
