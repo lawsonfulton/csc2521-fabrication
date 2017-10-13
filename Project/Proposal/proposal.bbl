@@ -1,0 +1,161 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{10}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Adya, Bahl, Padhye, A.Wolman, and Zhou}{Adya
+  et~al\mbox{.}}{2004}]%
+        {Adya-01}
+\bibfield{author}{\bibinfo{person}{A. Adya}, \bibinfo{person}{P. Bahl},
+  \bibinfo{person}{J. Padhye}, \bibinfo{person}{A.Wolman}, {and}
+  \bibinfo{person}{L. Zhou}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{A multi-radio unification protocol for {IEEE}
+  802.11 wireless networks}. In \bibinfo{booktitle}{{\em Proceedings of the
+  IEEE 1st International Conference on Broadnets Networks (BroadNets'04)}}.
+  \bibinfo{publisher}{IEEE}, \bibinfo{address}{Los Alamitos, CA},
+  \bibinfo{pages}{210--217}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Akyildiz, Melodia, and Chowdhury}{Akyildiz
+  et~al\mbox{.}}{2007}]%
+        {Akyildiz-02}
+\bibfield{author}{\bibinfo{person}{I.~F. Akyildiz}, \bibinfo{person}{T.
+  Melodia}, {and} \bibinfo{person}{K.~R. Chowdhury}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{A Survey on Wireless Multimedia Sensor Networks}.
+\newblock \bibinfo{journal}{{\em Computer Netw.\/}} \bibinfo{volume}{51},
+  \bibinfo{number}{4} (\bibinfo{year}{2007}), \bibinfo{pages}{921--960}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Akyildiz, Su, Sankarasubramaniam, and
+  Cayirci}{Akyildiz et~al\mbox{.}}{2002}]%
+        {Akyildiz-01}
+\bibfield{author}{\bibinfo{person}{I.~F. Akyildiz}, \bibinfo{person}{W. Su},
+  \bibinfo{person}{Y. Sankarasubramaniam}, {and} \bibinfo{person}{E. Cayirci}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Wireless Sensor Networks: A Survey}.
+\newblock \bibinfo{journal}{{\em Comm. ACM\/}} \bibinfo{volume}{38},
+  \bibinfo{number}{4} (\bibinfo{year}{2002}), \bibinfo{pages}{393--422}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Bahl, Chancre, and Dungeon}{Bahl
+  et~al\mbox{.}}{2004}]%
+        {Bahl-02}
+\bibfield{author}{\bibinfo{person}{P. Bahl}, \bibinfo{person}{R. Chancre},
+  {and} \bibinfo{person}{J. Dungeon}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{{SSCH}: Slotted Seeded Channel Hopping for Capacity
+  Improvement in {IEEE} 802.11 Ad-Hoc Wireless Networks}. In
+  \bibinfo{booktitle}{{\em Proceeding of the 10th International Conference on
+  Mobile Computing and Networking (MobiCom'04)}}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY}, \bibinfo{pages}{112--117}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{CROSSBOW}{CROSSBOW}{2008}]%
+        {CROSSBOW}
+CROSSBOW \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{title}{{XBOW} Sensor Motes Specifications}.
+\newblock   (\bibinfo{year}{2008}).
+\newblock
+\newblock
+\shownote{http://www.xbow.com.}
+
+
+\bibitem[\protect\citeauthoryear{Culler, Estrin, and Srivastava}{Culler
+  et~al\mbox{.}}{2004}]%
+        {Culler-01}
+\bibfield{author}{\bibinfo{person}{D. Culler}, \bibinfo{person}{D. Estrin},
+  {and} \bibinfo{person}{M. Srivastava}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Overview of Sensor Networks}.
+\newblock \bibinfo{journal}{{\em IEEE Comput.\/}} \bibinfo{volume}{37},
+  \bibinfo{number}{8 (Special Issue on Sensor Networks)}
+  (\bibinfo{year}{2004}), \bibinfo{pages}{41--49}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Harvard CodeBlue}{Harvard CodeBlue}{2008}]%
+        {Harvard-01}
+Harvard CodeBlue \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{title}{{CodeBlue}: Sensor Networks for Medical Care}.
+\newblock   (\bibinfo{year}{2008}).
+\newblock
+\newblock
+\shownote{http://www.eecs.harvard.edu/mdw/ proj/codeblue/.}
+
+
+\bibitem[\protect\citeauthoryear{Natarajan, Motani, de~Silva, Yap, and
+  Chua}{Natarajan et~al\mbox{.}}{2007}]%
+        {Natarajan-01}
+\bibfield{author}{\bibinfo{person}{A. Natarajan}, \bibinfo{person}{M. Motani},
+  \bibinfo{person}{B. de Silva}, \bibinfo{person}{K. Yap}, {and}
+  \bibinfo{person}{K.~C. Chua}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Investigating Network Architectures for Body Sensor
+  Networks}. In \bibinfo{booktitle}{{\em Network Architectures}},
+  \bibfield{editor}{\bibinfo{person}{G.~Whitcomb} {and}
+  \bibinfo{person}{P.~Neece}} (Eds.). \bibinfo{publisher}{Keleuven Press},
+  \bibinfo{address}{Dayton, OH}, \bibinfo{pages}{322--328}.
+\newblock
+\showeprint{cs/960935712}
+
+
+\bibitem[\protect\citeauthoryear{Tzamaloukas and
+  Garcia-Luna-Aceves}{Tzamaloukas and Garcia-Luna-Aceves}{2000}]%
+        {Tzamaloukas-01}
+\bibfield{author}{\bibinfo{person}{A. Tzamaloukas} {and} \bibinfo{person}{J.~J.
+  Garcia-Luna-Aceves}.} \bibinfo{year}{2000}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Channel-Hopping Multiple Access}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport} I-CA2301.
+  \bibinfo{institution}{Department of Computer Science, University of
+  California}, \bibinfo{address}{Berkeley, CA}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Zhou, Lu, Wan, Yarvis, and Stankovic}{Zhou
+  et~al\mbox{.}}{2008}]%
+        {Zhou-06}
+\bibfield{author}{\bibinfo{person}{G. Zhou}, \bibinfo{person}{J. Lu},
+  \bibinfo{person}{C.-Y. Wan}, \bibinfo{person}{M.~D. Yarvis}, {and}
+  \bibinfo{person}{J.~A. Stankovic}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Body Sensor Networks}}.
+\newblock \bibinfo{publisher}{MIT Press}, \bibinfo{address}{Cambridge, MA}.
+\newblock
+
+
+\end{thebibliography}

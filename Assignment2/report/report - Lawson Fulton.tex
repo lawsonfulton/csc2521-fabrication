@@ -75,21 +75,12 @@
 		Originally I wanted to make a twisty menger sponge, but that turned out to be too much of a pain. So instead, it's just a twisted menger sponge of depth 1 that can be tiled. The main parameters are \texttt{twist\_degrees}, the degrees that the box twists. \texttt{hole\_scale}, the scale of the hole relative to the box. And \texttt{n\_wide, n\_long, n\_tall} for the number of repetitions in each direction.
 		
 		\begin{figure*}[ht!]
-			\includegraphics[width=.3\textwidth]{../data/renders/sphere32}\hfill
-			\includegraphics[width=.3\textwidth]{../data/renders/bunny32}\hfill
-			\includegraphics[width=.3\textwidth]{../data/renders/teapot32}
-			\caption{34x34x34}
+			\includegraphics[width=.45\textwidth]{../model_single}\hfill
+			\includegraphics[width=.45\textwidth]{../model}\hfill
+			\caption{Left: n\_wide=n\_long=n\_tall=1, twist\_degrees=45, hole\_scale=0.5 Right: n\_wide=n\_long=n\_tall=3, twist\_degrees=30, hole\_scale=0.5 }
 		\end{figure*}
 		
-		\newpage
-
-		\item[Sources]:\\
 		
-		1. Fast algorithm for ray-triangle intersection: \href{http://en.wikipedia.org/wiki/M%C3%B6ller%E2%80%93Trumbore_intersection_algorithm}{Moller-Trumbore intersection algorithm}. 
-		
-		2. Branchless ray to bounding-box intersection algorithm: \href{http://tavianator.com/2011/05/fast-branchless-raybounding-box-intersections/}{http://tavianator.com/2011/05/fast-branchless-raybounding-box-intersections/}.  
-		
-		3. Stanford 3D scanning repository for Stanford dragon mesh: \href{http://graphics.stanford.edu/data/3Dscanrep/}{http://graphics.stanford.edu/data/3Dscanrep/}. 
 		
 	\end{description}
 	

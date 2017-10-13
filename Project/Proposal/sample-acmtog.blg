@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: sample-acmtog.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: sample-bibliography.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty author in CROSSBOW
+Warning--empty author in Harvard-01
+You've used 10 entries,
+            5795 wiz_defined-function locations,
+            1590 strings with 20049 characters,
+and the built_in function-call counts, 11538 in all, are:
+= -- 1399
+> -- 410
+< -- 1
++ -- 140
+- -- 130
+* -- 863
+:= -- 1136
+add.period$ -- 52
+call.type$ -- 10
+change.case$ -- 72
+chr.to.int$ -- 10
+cite$ -- 12
+duplicate$ -- 1035
+empty$ -- 734
+format.name$ -- 162
+if$ -- 2766
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 29
+newline$ -- 122
+num.names$ -- 66
+pop$ -- 383
+preamble$ -- 1
+purify$ -- 162
+quote$ -- 0
+skip$ -- 359
+stack$ -- 0
+substring$ -- 854
+swap$ -- 106
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 243
+warning$ -- 2
+while$ -- 55
+width$ -- 0
+write$ -- 220
+(There were 2 warnings)
