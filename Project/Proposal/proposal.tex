@@ -64,7 +64,9 @@
 \renewcommand\shortauthors{Fulton}
 
 \begin{abstract}
-Something about stress analysis. Something about stress analysis. Something about stress analysis. Something about stress analysis. Something about stress analysis. Something about stress analysis. Something about stress analysis. Something about stress analysis. Something about stress analysis. Something about stress analysis. Something about stress analysis. 
+
+In this project we propose a method for exploring the design space of parametric CAD models with real-time visualization of stress analysis under small deformations. In particular, we propose precomputation through the training of an artificial neural network (ANN) for one of two ways of accelerating stress field computation. The first is to predict a stress field directly given CAD model parameters and external forces. The second is to use an autoencoder to create a non-linear reduced space in which to compute the stress analysis.
+
 \end{abstract}
 
 
@@ -81,91 +83,43 @@ Something about stress analysis. Something about stress analysis. Something abou
 \maketitle
 
 \section{Introduction}
+CAD modelling tools provide an expressive interface for the design of shapes for 3D fabrication. In particular, they allow designers to create parameterized shape families, which facilitate the quick exploration of many shapes intended for a particular use case. Often, the intended use of these shapes requires understandings of their behaviour under load. Structural stress analysis computed on a tetrahedral mesh by FEM is the most common way to achieve this goal. However, to get accurate results, these meshes can require very fine discretizations, which take multiple seconds, to minutes to solve even on today's hardware.
 
-As a new technology, Wireless Sensor Networks (WSNs) has a wide
-range of applications \cite{Schulz-17}, including
-environment monitoring, smart buildings, medical care, industrial and
-military applications. Among them, a recent trend is to develop
-commercial sensor networks that require pervasive sensing of both
-environment and human beings, for example, assisted living
-\cite{Chen-16} and smart homes
-\cite{Harvard-01, Adya-01,CROSSBOW}.
-% quote
-\begin{quote}
-	``For these applications, sensor devices are incorporated into human
-	cloths \cite{Natarajan-01, Zhou-06, Bahl-02, Adya-01} for monitoring
-	health related information like EKG readings, fall detection, and
-	voice recognition''.
-\end{quote}
-While collecting all these multimedia information
-\cite{Akyildiz-02} requires a high network throughput, off-the-shelf
-sensor devices only provide very limited bandwidth in a single
-channel: 19.2\,Kbps in MICA2 \cite{Bahl-02} and 250\,Kbps in MICAz.
 
-In this article, we propose MMSN, abbreviation for Multifrequency
-Media access control for wireless Sensor Networks. The main
-contributions of this work can be summarized as follows.
-% itemize
-\begin{itemize}
-	\item To the best of our knowledge, the MMSN protocol is the first
-	multifrequency MAC protocol especially designed for WSNs, in which
-	each device is equipped with a single radio transceiver and
-	the MAC layer packet size is very small.
-	\item Instead of using pairwise RTS/CTS frequency negotiation
-	\cite{Adya-01, Culler-01, Tzamaloukas-01, Zhou-06},
-	we propose lightweight frequency assignments, which are good choices
-	for many deployed comparatively static WSNs.
-	\item We develop new toggle transmission and snooping techniques to
-	enable a single radio transceiver in a sensor device to achieve
-	scalable performance, avoiding the nonscalable ``one
-	control channel + multiple data channels'' design \cite{Natarajan-01}.
-\end{itemize}
+%\begin{itemize}
+%	\item To 
+%\end{itemize}
 
 % Head 1
 \section{Previous Work}
 
+There have been several attempts in recent literature to speed up stress analysis for shape design through pre-computation.
 % Head 2
-\subsection{Frequency Assignment}17
+\subsection{Sampling and Interpolation}
 
-We propose a suboptimal distribution to be used by each node, which is
-easy to compute and does not depend on the number of competing
-nodes. A natural candidate is an increasing geometric sequence, in
-which
-% Numbered Equation
-\begin{equation}
-\label{eqn:01}
-P(t)=\frac{b^{\frac{t+1}{T+1}}-b^{\frac{t}{T+1}}}{b-1},
-\end{equation}
-where $t=0,{\ldots}\,,T$, and $b$ is a number greater than $1$.
+The approach used in \cite{Schulz-17} is to do a full stress analysis at multiple points within the parameter space, and use a clever interpolation scheme to produce intermediary results. This approach has the benefit of handling varying mesh topologies, but requires storing $2^k$ meshes where $k$ is the number of model parameters, thus requiring large amounts of storage for complex designs.
 
-In our algorithm, we use the suboptimal approach for simplicity and
 
 
 % Head 3
-\subsubsection{Exclusive Frequency Assignment}
+\subsection{Reduced Space Computation}
 
-
-In exclusive frequency assignment, nodes first exchange their IDs
-among two communication hops so that each node knows its two-hop
-neighbors' IDs. In the second broadcast, each node beacons all
-neighbors' IDs it has collected during the first broadcast period.
-
-% Head 4
-\paragraph{Eavesdropping}
-
-Even though the even selection scheme leads to even sharing of
-available frequencies among any two-hop neighborhood, it involves a
-number of two-hop broadcasts. To reduce the communication cost, we
-propose a lightweight eavesdropping scheme.
+Another approach, as in \cite{Chen-16}, is to use a small linear basis to generate the stress field and do a complete solve within this reduced space. This approach avoids storage of meshes, but has the drawback of only working for fixed mesh topologies. Therefore it is unsuitable for typical CAD models which have varying mesh topologies for each choice of design parameters.
 
 \section{Proposed Solution}
-Even though the even selection scheme leads to even sharing of
-available frequencies among any two-hop neighborhood, it involves a
-number of two-hop broadcasts. To reduce the communication cost, we
-propose a lightweight eavesdropping scheme.
+
+We propose two methods based on techniques from machine learning which mirror the previous approaches, while hopefully avoiding their shortcomings.
+
+\subsection{Direct Stress Field Prediction}
+
+The most straight forward approach is to calculate an approximation of the stress field for a shape directly given the parameters and the external forces. This can be done through the use of an ANN and learning by stochastic gradient descent (SGD). The main challenge using this approach will be choosing the representation of shape geometry on which to do learning. Since each parameter set may correspond to a different mesh topology or size, we must use a representation which is invariant to different mesh parameterizations. One solution is to adapt surface networks \cite{Krostikov-17} to work for tetrahedral meshes. Another is to simply use a fixed size representation by voxelizing the domain and using conventional convolutional neural network techniques \cite{Wang-17}.
+
+\subsection{Autoencoder Dimensionality Reduction}
+Another potentially more sophisticated approach is to replicate the results of \cite{Schulz-17} but using an autoencoder framework in place of principal component analysis for stress subspace construction. However, it is uncertain whether their approach will generalize easily to a nonlinear subspace, and futhermore we would still have to address the issue of varying mesh topology. For these reasons, this approach is only of secondary interest, and requires further investigation.
 
 \section{Expected Results}
-Winning
+
+It is too early to make a confident prediction about the results of this investigation. However, we hope to produce a system of precomputation that will allow the realtime exploration of parameterized CAD models and their associated stress charachteristics. In the ideal case, this system will either consume less memory, perform faster, or give more accurate results than either of the previous approaches.
 
 % Bibliography
 \bibliographystyle{ACM-Reference-Format}

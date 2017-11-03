@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{2}
+\begin{thebibliography}{4}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -49,6 +49,17 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Kostrikov, Bruna, Panozzo, and
+  Zorin}{Kostrikov et~al\mbox{.}}{2017}]%
+        {Krostikov-17}
+\bibfield{author}{\bibinfo{person}{Ilya Kostrikov}, \bibinfo{person}{Joan
+  Bruna}, \bibinfo{person}{Daniele Panozzo}, {and} \bibinfo{person}{Denis
+  Zorin}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Surface Networks}.
+\newblock  (\bibinfo{date}{05} \bibinfo{year}{2017}).
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Schulz, Xu, Zhu, Zheng, Grinspun, and
   Matusik}{Schulz et~al\mbox{.}}{2017}]%
         {Schulz-17}
@@ -65,6 +76,23 @@
 \showISSN{0730-0301}
 \showDOI{%
 \url{https://doi.org/10.1145/3072959.3073688}}
+
+
+\bibitem[\protect\citeauthoryear{Wang, Liu, Guo, Sun, and Tong}{Wang
+  et~al\mbox{.}}{2017}]%
+        {Wang-17}
+\bibfield{author}{\bibinfo{person}{Peng-Shuai Wang}, \bibinfo{person}{Yang
+  Liu}, \bibinfo{person}{Yu-Xiao Guo}, \bibinfo{person}{Chun-Yu Sun}, {and}
+  \bibinfo{person}{Xin Tong}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{O-CNN: Octree-based Convolutional Neural Networks
+  for 3D Shape Analysis}.
+\newblock \bibinfo{journal}{{\em ACM Trans. Graph.\/}} \bibinfo{volume}{36},
+  \bibinfo{number}{4}, Article \bibinfo{articleno}{72} (\bibinfo{date}{July}
+  \bibinfo{year}{2017}), \bibinfo{numpages}{11}~pages.
+\newblock
+\showISSN{0730-0301}
+\showDOI{%
+\url{https://doi.org/10.1145/3072959.3073608}}
 
 
 \end{thebibliography}
