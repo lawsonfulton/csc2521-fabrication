@@ -1,8 +1,8 @@
 function fem2D()
 
 %create square mesh
-[tri, v] = createSquareMesh(3,3, 1,1);
-%[tri, v] = createNonSquareMesh(100, 5);
+%[tri, v] = createNonSquareMesh(10,10, 1,1);
+[tri, v] = createNonSquareMesh(50, 2);
 
 trimesh(tri, v(:,1), v(:,2));
 numVerts = size(v,1);
@@ -168,20 +168,19 @@ v(:,2) = v(:,2) - min(v(:,2));
 
 end
 
-function [tri, v] = createNonSquareMesh(n_verts, long_radius)
+function [tri, v] = createNonSquareMesh(n_verts, radius)
 
-radius = 0.5 * long_radius;
 center = [0, radius]; % center coordinates of the circle [x0,y0] 
 
 angle = 2*pi*rand(n_verts,1);
 r = radius*sqrt(rand(n_verts,1));
 X = r.*cos(angle)+ center(1);
-Y = (r.*sin(angle)+ center(2)) * 2.0;
+Y = r.*sin(angle)+ center(2);
 
-X_flat = linspace(-radius*0.6, radius*0.6, 10)';
-Y_flat = zeros(10, 1);
+X_flat = linspace(-radius, radius, 10)';
+Y_flat = zeros(10);
 
-v = [cat(1, X(:), X_flat)  cat(1, Y(:), Y_flat)];
+v = [cat(1, X(:),  Y(:)];
 tri = delaunay(v(:,1), v(:,2));
 numVerts = size(v,1);
 %center mesh
