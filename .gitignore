@@ -17,7 +17,7 @@ build
 #Geometry
 *.obj
 *.stl
-
+*.scad
 
 
 
