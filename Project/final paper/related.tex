@@ -1,0 +1,16 @@
+- Model reduction papers (barbic, hildebrandt, ted kim, etc)\\
+- Physics ML papers (physics forests, google one)\\
+
+
+There have been several attempts in recent literature to speed up stress analysis for shape design through pre-computation.
+% Head 2
+\subsection{Sampling and Interpolation}
+
+The approach used in \cite{Schulz-17} is to do a full stress analysis at multiple points within the parameter space, and use a clever interpolation scheme to produce intermediary results. This approach has the benefit of handling varying mesh topologies, but requires storing $2^k$ meshes where $k$ is the number of model parameters, thus requiring large amounts of storage for complex designs.
+
+
+
+% Head 3
+\subsection{Reduced Space Computation}
+
+Another approach, as in \cite{Chen-16}, is to use a small linear basis to generate the stress field and do a complete solve within this reduced space. This approach avoids storage of meshes, but has the drawback of only working for fixed mesh topologies. Therefore it is unsuitable for typical CAD models which have varying mesh topologies for each choice of design parameters.

@@ -1,0 +1,11 @@
+Something about accelerating computation of stress analysis.. Take it from my proposal.
+
+Because of this, there has been decades of work attempting to accelerate solid mechanics simulations for the purposes of stress analysis. Such works take two broad forms, solver-based approached (which attempt to improve the linear algebraic operations at the heart of a physics simulator)or discretization-based approaches (which try to reduce the degrees-of-freedom)in a computational mesh. One of he most successful acceleration and well-loved techniques for speeding up simulations is linear modal analysis, a discretization-based technique which performs simulation in a small reduced space constructed from the linear deformation modes of a deformable object. 
+
+However, linear modal analysis still has issues which prevent it from being a panacea to the performance problems of physics-based simulation. First anything beyond the linear modes can be difficult to compute, relying on non-linear modal derivatives. Second, motions which span highly non-linear regions of the configuration space can require large linear spaces to accurately represent. This can have a dire impact on runtimes since system matrices for small reduced spaces become dense meaning that even a small increase in the number of modes can have a hampering effect on performance (consider that fast integration schemes for reduced models typically have $O(r^2)$ to $O(r^4)$ asymptotic behavior where $r$ is the dimension of the reduced space). 
+
+Ideally, one would generate as small a reduced space as necessary directly from simulation data. A strictly linear basis can make this difficult. In this paper we flaunt conventional wisdom and disregard linearity, in favor of non-liner dimensionality reduction techniques. In particular we draw from the field of machine learning and devise a new autoencoder architecture that can efficiently represent non-linear deformations with high fidelity using fewer degrees of freedom than a corresponding linear reduced representation. Furthermore we develop a minimization based time integrator that takes advantage of our reduced representation to produce dynamic simulations of production quality meshes at interactive rates.
+
+The remainder of this paper proceeds as follows: 
+
+..

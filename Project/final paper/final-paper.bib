@@ -1,0 +1,530 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+%%%     author          = "Gerry Murray",
+%%%     version         = "1.2",
+%%%     date            = "2 April 2012",
+%%%     filename        = "acmsmall-sample-bibfile.bib",
+%%%     address         = "ACM, NY",
+%%%     email           = "murray at hq.acm.org",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+%%%     supported       = "yes",
+%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+%%%                        that 'match' the examples provided in the Specifications Document
+%%%                        AND, also, 'legacy'-type bibs. It should assist authors in 
+%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+%%%                        so as to obtain the appropriate ACM Reference Format output. 
+%%%			   It also contains many 'Standard Abbreviations'. "
+%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+%Entries
+@article{Schulz-17,
+	author = {Schulz, Adriana and Xu, Jie and Zhu, Bo and Zheng, Changxi and Grinspun, Eitan and Matusik, Wojciech},
+	title = {Interactive Design Space Exploration and Optimization for CAD Models},
+	journal = {ACM Trans. Graph.},
+	issue_date = {July 2017},
+	volume = {36},
+	number = {4},
+	month = jul,
+	year = {2017},
+	issn = {0730-0301},
+	pages = {157:1--157:14},
+	articleno = {157},
+	numpages = {14},
+	url = {http://doi.acm.org/10.1145/3072959.3073688},
+	doi = {10.1145/3072959.3073688},
+	acmid = {3073688},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {CAD, interpolation, parametric shapes, precomputations, simulation},
+} 
+
+@article{Chen-16,
+	author = {Chen, Xiang and Zheng, Changxi and Zhou, Kun},
+	year = {2016},
+	month = {10},
+	pages = {1-1},
+	title = {Example-Based Subspace Stress Analysis for Interactive Shape Design},
+	volume = {PP},
+	booktitle = {IEEE Transactions on Visualization and Computer Graphics}
+}
+
+@article{Krostikov-17,
+	author = {Kostrikov, Ilya and Bruna, Joan and Panozzo, Daniele and Zorin, Denis},
+	year = {2017},
+	month = {05},
+	pages = {},
+	title = {Surface Networks}
+}
+
+@article{Wang-17,
+	author = {Wang, Peng-Shuai and Liu, Yang and Guo, Yu-Xiao and Sun, Chun-Yu and Tong, Xin},
+	title = {O-CNN: Octree-based Convolutional Neural Networks for 3D Shape Analysis},
+	journal = {ACM Trans. Graph.},
+	issue_date = {July 2017},
+	volume = {36},
+	number = {4},
+	month = jul,
+	year = {2017},
+	issn = {0730-0301},
+	pages = {72:1--72:11},
+	articleno = {72},
+	numpages = {11},
+	url = {http://doi.acm.org/10.1145/3072959.3073608},
+	doi = {10.1145/3072959.3073608},
+	acmid = {3073608},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {convolutional neural network, object classification, octree, shape retrieval, shape segmentation},
+}
+
+@article{Barbic-05,
+ author = {Barbi\v{c}, Jernej and James, Doug L.},
+ title = {Real-Time Subspace Integration for St. Venant-Kirchhoff Deformable Models},
+ journal = {ACM Trans. Graph.},
+ issue_date = {July 2005},
+ volume = {24},
+ number = {3},
+ month = jul,
+ year = {2005},
+ issn = {0730-0301},
+ pages = {982--990},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/1073204.1073300},
+ doi = {10.1145/1073204.1073300},
+ acmid = {1073300},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {animation, deformation, finite element method, haptics, interactive, model reduction, precomputation, simulation},
+} 
+
+@article{vonTycowicz-13,
+ author = {von Tycowicz, Christoph and Schulz, Christian and Seidel, Hans-Peter and Hildebrandt, Klaus},
+ title = {An Efficient Construction of Reduced Deformable Objects},
+ journal = {ACM Trans. Graph.},
+ issue_date = {November 2013},
+ volume = {32},
+ number = {6},
+ month = nov,
+ year = {2013},
+ issn = {0730-0301},
+ pages = {213:1--213:10},
+ articleno = {213},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/2508363.2508392},
+ doi = {10.1145/2508363.2508392},
+ acmid = {2508392},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {geometric modeling, modal analysis, modal derivatives, model reduction, real-time simulation, subset selection},
+} 
+
+
+@article{Ladicky-15,
+ author = {Ladick\'{y}, L'ubor and Jeong, SoHyeon and Solenthaler, Barbara and Pollefeys, Marc and Gross, Markus},
+ title = {Data-driven Fluid Simulations Using Regression Forests},
+ journal = {ACM Trans. Graph.},
+ issue_date = {November 2015},
+ volume = {34},
+ number = {6},
+ month = oct,
+ year = {2015},
+ issn = {0730-0301},
+ pages = {199:1--199:9},
+ articleno = {199},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/2816795.2818129},
+ doi = {10.1145/2816795.2818129},
+ acmid = {2818129},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {data-driven, fluid simulation, regression forest},
+} 
+
+@article{CNNFluid2016,
+  author = {{Tompson}, J. and {Schlachter}, K. and {Sprechmann}, P. and {Perlin}, K.},
+  title = "{Accelerating Eulerian Fluid Simulation With Convolutional Networks}",
+  journal = {ArXiv e-prints},
+  archivePrefix = "arXiv",
+  eprint = {1607.03597},
+  primaryClass = "cs.CV",
+  year = 2016,
+  month = jul,
+}
+
+@article{Xu-16,
+ author = {Xu, Hongyi and Barbi\v{c}, Jernej},
+ title = {Pose-space Subspace Dynamics},
+ journal = {ACM Trans. Graph.},
+ issue_date = {July 2016},
+ volume = {35},
+ number = {4},
+ month = jul,
+ year = {2016},
+ issn = {0730-0301},
+ pages = {35:1--35:14},
+ articleno = {35},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/2897824.2925916},
+ doi = {10.1145/2897824.2925916},
+ acmid = {2925916},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {FEM, character rigging, model reduction, physically based simulation, pose-space, real-time, secondary motion},
+} 
+
+@article{Teng-14,
+ author = {Teng, Yun and Otaduy, Miguel A. and Kim, Theodore},
+ title = {Simulating Articulated Subspace Self-contact},
+ journal = {ACM Trans. Graph.},
+ issue_date = {July 2014},
+ volume = {33},
+ number = {4},
+ month = jul,
+ year = {2014},
+ issn = {0730-0301},
+ pages = {106:1--106:9},
+ articleno = {106},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/2601097.2601181},
+ doi = {10.1145/2601097.2601181},
+ acmid = {2601181},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {character simulation, cubature, self-collision detection, self-collision resolution, subspace integration},
+} 
+
+@article{Teng-15,
+ author = {Teng, Yun and Meyer, Mark and DeRose, Tony and Kim, Theodore},
+ title = {Subspace Condensation: Full Space Adaptivity for Subspace Deformations},
+ journal = {ACM Trans. Graph.},
+ issue_date = {August 2015},
+ volume = {34},
+ number = {4},
+ month = jul,
+ year = {2015},
+ issn = {0730-0301},
+ pages = {76:1--76:9},
+ articleno = {76},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/2766904},
+ doi = {10.1145/2766904},
+ acmid = {2766904},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {character simulation, collision resolution, cubature, static condensation, subspace integration},
+} 
+
+@article{An-08,
+ author = {An, Steven S. and Kim, Theodore and James, Doug L.},
+ title = {Optimizing Cubature for Efficient Integration of Subspace Deformations},
+ journal = {ACM Trans. Graph.},
+ issue_date = {December 2008},
+ volume = {27},
+ number = {5},
+ month = dec,
+ year = {2008},
+ issn = {0730-0301},
+ pages = {165:1--165:10},
+ articleno = {165},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1409060.1409118},
+ doi = {10.1145/1409060.1409118},
+ acmid = {1409118},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {dimensional model reduction, dynamic deformations, nonlinear solid mechanics, quadrature, real-time simulation, reduced-order modeling, subspace dynamics, subspace integration},
+}
+
+@article{Liu-17,
+ author = {Liu, Tiantian and Bouaziz, Sofien and Kavan, Ladislav},
+ title = {Quasi-Newton Methods for Real-Time Simulation of Hyperelastic Materials},
+ journal = {ACM Trans. Graph.},
+ issue_date = {June 2017},
+ volume = {36},
+ number = {3},
+ month = may,
+ year = {2017},
+ issn = {0730-0301},
+ pages = {23:1--23:16},
+ articleno = {23},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/2990496},
+ doi = {10.1145/2990496},
+ acmid = {2990496},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Physics-based animation, material models, numerical optimization},
+} 
+
+@article{Wang-16,
+ author = {Wang, Huamin and Yang, Yin},
+ title = {Descent Methods for Elastic Body Simulation on the GPU},
+ journal = {ACM Trans. Graph.},
+ issue_date = {November 2016},
+ volume = {35},
+ number = {6},
+ month = nov,
+ year = {2016},
+ issn = {0730-0301},
+ pages = {212:1--212:10},
+ articleno = {212},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/2980179.2980236},
+ doi = {10.1145/2980179.2980236},
+ acmid = {2980236},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {GPU acceleration, hyperelasticity, jacobi preconditioning, nonlinear optimization, the chebyshev method},
+} 
+
+@article{Musialski-16,
+ author = {Musialski, Przemyslaw and Hafner, Christian and Rist, Florian and Birsak, Michael and Wimmer, Michael and Kobbelt, Leif},
+ title = {Non-linear Shape Optimization Using Local Subspace Projections},
+ journal = {ACM Trans. Graph.},
+ issue_date = {July 2016},
+ volume = {35},
+ number = {4},
+ month = jul,
+ year = {2016},
+ issn = {0730-0301},
+ pages = {87:1--87:13},
+ articleno = {87},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/2897824.2925886},
+ doi = {10.1145/2897824.2925886},
+ acmid = {2925886},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {digital fabrication, geometric design optimization, geometry processing, non-convex optimization, shape optimization},
+} 
+
+@article{Byrd1994,
+author="Byrd, Richard H.
+and Nocedal, Jorge
+and Schnabel, Robert B.",
+title="Representations of quasi-Newton matrices and their use in limited memory methods",
+journal="Mathematical Programming",
+year="1994",
+month="Jan",
+day="01",
+volume="63",
+number="1",
+pages="129--156",
+abstract="We derive compact representations of BFGS and symmetric rank-one matrices for optimization. These representations allow us to efficiently implement limited memory methods for large constrained optimization problems. In particular, we discuss how to compute projections of limited memory matrices onto subspaces. We also present a compact representation of the matrices generated by Broyden's update for solving systems of nonlinear equations.",
+issn="1436-4646",
+doi="10.1007/BF01582063",
+url="https://doi.org/10.1007/BF01582063"
+}
+@article{adam,
+  added-at = {2015-01-01T00:00:00.000+0100},
+  author = {Kingma, Diederik P. and Ba, Jimmy},
+  biburl = {https://www.bibsonomy.org/bibtex/23b0328784dbfce338ba0dd2618a7a059/dblp},
+  ee = {http://arxiv.org/abs/1412.6980},
+  interhash = {57d2ac873f398f21bb94790081e80394},
+  intrahash = {3b0328784dbfce338ba0dd2618a7a059},
+  journal = {CoRR},
+  keywords = {dblp},
+  timestamp = {2015-06-18T04:22:29.000+0200},
+  title = {Adam: A Method for Stochastic Optimization.},
+  url = {http://dblp.uni-trier.de/db/journals/corr/corr1412.html#KingmaB14},
+  volume = {abs/1412.6980},
+  year = 2014
+}
